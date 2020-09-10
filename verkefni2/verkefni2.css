@@ -1,0 +1,47 @@
+.vsun{
+    animation-name: simpleRotate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+    transform-origin: 50% 50%;
+}
+body{
+    padding-top: 300px;
+    padding-left: 800px;
+    background: #000000;
+    color: #E4E4E4;
+}
+h1{
+    padding-left: 10px;
+    font-family: 'Krona One', sans-serif;
+    font-size: 20px;
+
+}
+@keyframes simpleRotate {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg);}
+}
+@keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
