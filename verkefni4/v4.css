@@ -1,0 +1,111 @@
+body {
+  background-color: midnightblue;
+  color: azure;
+}
+h4 {
+}
+.vsun {
+  animation-name: simpleRotate;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-delay: 3s;
+  transform-origin: 50% 50%;
+  margin-left: 40em;
+}
+.logo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+}
+.title {
+  margin-top: 1.5em;
+  margin-left: -3em;
+  font-size: x-large;
+}
+thead {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+}
+table td {
+  border: 1px solid azure;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+table {
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  table-layout: fixed;
+  width: 100%;
+}
+table tr {
+  padding: 0.35em;
+}
+table th,
+table td {
+  padding: 0.625em;
+  text-align: center;
+}
+caption {
+  font-size: larger;
+  font-style: bold;
+}
+.takki {
+  background-color: white;
+  color: black;
+  border: 2px solid #4caf50;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.4s;
+  font-size: 16px;
+  border-radius: 8px;
+  margin-top: 3em;
+}
+.takki:hover {
+  background-color: #4caf50;
+  color: white;
+}
+@keyframes simpleRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 600px) {
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  table tr {
+    border-bottom: 3px solid azure;
+  }
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    text-align: right;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    float: left;
+  }
+  .logo {
+    grid-template-columns: none;
+  }
+  .vsun {
+    margin-left: 3.5em;
+  }
+  .title {
+    margin-left: 0em;
+  }
+}
