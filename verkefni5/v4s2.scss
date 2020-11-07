@@ -1,0 +1,36 @@
+body {
+  background-color: midnightblue;
+  color: azure;
+}
+.vsun {
+  animation-name: simpleRotate;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-delay: 3s;
+  transform-origin: 50% 50%;
+  margin-left: 40em;
+}
+.logo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+}
+.title {
+  margin-top: 1.5em;
+  margin-left: -3em;
+  font-size: x-large;
+}
+@keyframes simpleRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media screen and (min-width: 600px) {
+  .dalkur {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

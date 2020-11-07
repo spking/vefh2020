@@ -1,0 +1,15 @@
+body {
+  background: azure;
+}
+
+input {
+  display: none;
+}
+
+nav {
+  display: none;
+}
+
+input:checked ~ nav {
+  display: block;
+}

@@ -1,0 +1,13 @@
+$bakgrunnur: black;
+$textilitur: white;
+
+@mixin bodyMixin {
+  width: 80%;
+  margin: 0 auto;
+}
+
+body {
+  background: lighten($bakgrunnur, 20%);
+  color: $textilitur;
+  @include bodyMixin();
+}

@@ -1,0 +1,82 @@
+body {
+  background: azure;
+}
+
+input {
+  display: none;
+}
+
+nav {
+  display: none;
+}
+
+input:checked ~ nav {
+  display: block;
+}
+
+body {
+  background-color: midnightblue;
+  color: azure;
+}
+
+.vsun {
+  -webkit-animation-name: simpleRotate;
+          animation-name: simpleRotate;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  margin-left: 40em;
+}
+
+.logo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.title {
+  margin-top: 1.5em;
+  margin-left: -3em;
+  font-size: x-large;
+}
+
+@-webkit-keyframes simpleRotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes simpleRotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .dalkur {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+/*# sourceMappingURL=v5.css.map */

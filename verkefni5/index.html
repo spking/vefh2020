@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="v5.css">
+    <title>Document</title>
+</head>
+<body>
+    <input type="checkbox" id="takki">
+    <label for="takki" class="icon-list-numbered">&#xe9b9;</label>
+    <nav>
+        <ul>
+            <li>
+                <a href="https://github.com/spking/vefh2020">GitHub</a>
+            </li>
+            <li>
+                <a href="https://spking.github.io/vefh2020/verkefni1/">Verkefni 1</a>
+            </li>
+            <li>
+                <a href="https://spking.github.io/vefh2020/verkefni2/">Verkefni 2</a>
+            </li>
+            <li>
+                <a href="#">Leynihlekkur</a>
+            </li>
+        </ul>
+    </nav>
+    <form method="POST" action="#">
+        <h2>Stjörnumerkt* er ekki nauðsýnilegt að fylla út</h2>
+        <div class="dalkur">
+            <section>
+                <label>Lag Nafn:</label><br>
+                <input type="text" name="lagNafn" reqired><br>
+                
+                <label>Listamaður:</label><br>
+                <input type="text" name="listamadur" required><br>
+
+                <label>Útgáfudagur:</label><br>
+                <input type="date" name="dagsetning" reqired><br>
+                <br>
+            </section>
+            <section>
+                <input type="radio" name="mrgUtgafa" value="mrgY">Er lagið MRG útgáfa?*
+                <br>
+
+                <input type="checkbox" name="eigandi">Er lagið þitt?*
+                <br>
+                <br>
+                <select name="Réttindi">
+                    <option value="engin" selected>Engin upprunaréttindi</option>
+                    <option value="islrett">Réttindi með íslenskum útgáfuaðila</option>
+                    <option value="erlrett">Réttindi með erlendum útgáfuaðila</option>
+                </select><br>
+            </section>
+            <section>
+                <label>Nafn:</label><br>
+                <input type="text" value="Nafn Þitt Hér" required><br>
+
+                <label>Netfang:</label><br>
+                <input type="email" value="Netfang Þitt Hér"><br>
+
+                <label>Aldur Þinn*:</label><br>
+                <input type="date" name="dagsetning"><br>
+                <br>
+                <select name="kyn">
+                    <option value="none" selected>kyn*</option>
+                    <option value="kk">Karl</option>
+                    <option value="kvk">Kona</option>
+                    <option value="annad">Annað</option>
+                </select><br>
+            </section>
+        </div>
+        <br>
+        <input type="submit" value="Senda">
+    </form>
+</body>
+</html>
